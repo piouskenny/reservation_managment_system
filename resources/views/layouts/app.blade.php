@@ -15,7 +15,7 @@
     <div class="flex justify-between justify-items-center items-center">
         <div class="mb-8">
             <h1 class="text-gray-300 text-md ">Welcome back!</h1>
-            <h1 class="text-black font-semibold lg:text-4xl text-2xl">Piousiuts Hotels</h1>
+            <h1 class="text-black font-semibold lg:text-4xl text-2xl">Piousuits Hotels</h1>
         </div>
 
         <div class="cursor-pointer">

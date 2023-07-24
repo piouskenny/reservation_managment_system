@@ -15,6 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', Home::class);
-
+Route::get('/', Home::class)->name('home');
 Route::get('/singleroom/{room_id}', RoomPage::class)->name('single_room');
