@@ -1,5 +1,5 @@
 <div class="w-[47%] lg:w-[24%] lg:p-2 mt-4 bg-white border border-gray-200 rounded-lg shadow lg:mx-1 mx-1">
-    <a href="#">
+    <a href="{{ route('single_room', $id) }}">
         <img class="rounded-t-lg lg:h-[200px] h-[120px]" src="/docs/images/blog/image-1.jpg" alt="" />
     </a>
     <div class="lg:p-5 p-2">

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\Home;
+use App\Http\Livewire\Pages\RoomPage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', Home::class);
+
+Route::get('/singleroom/{room_id}', RoomPage::class)->name('single_room');
