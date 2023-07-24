@@ -9,6 +9,14 @@ class Room extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'name',
+        'price',
+        'category',
+        'location',
+        'description'
+    ];
+
     public function room_reservations()
     {
         return $this->hasMany(RoomReservation::class);
@@ -19,7 +27,8 @@ class Room extends Model
         return $this->hasMany(RoomItems::class);
     }
 
-    public function room_images() {
+    public function room_images()
+    {
         return $this->hasMany(RoomImages::class);
     }
 }
