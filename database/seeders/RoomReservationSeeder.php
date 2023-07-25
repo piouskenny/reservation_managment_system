@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\RoomItems;
+use App\Models\RoomReservation;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class RoomItemsSeeder extends Seeder
+class RoomReservationSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,26 +15,26 @@ class RoomItemsSeeder extends Seeder
     {
         $roomitems = [
             [
-                'room_id' => 4,
-                'name' => "Free Wifi",
+                'room_id' => 1,
+                'status' => true,
             ],
             [
                 'room_id' => 4,
-                'name' => "Netflix",
+                'status' => true,
             ],
             [
-                'room_id' => 4,
-                'name' => "PS-5",
+                'room_id' => 6,
+                'status' => true,
             ],
             [
-                'room_id' => 4,
-                'name' => "Dining Table",
+                'room_id' => 7,
+                'status' => true,
             ]
         ];
 
 
         foreach ($roomitems as $key => $value) {
-            RoomItems::create($value);
+            RoomReservation::create($value);
         }
     }
 }

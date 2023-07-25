@@ -9,6 +9,8 @@ class RoomReservation extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['room_id', 'status'];
+
     public function room()
     {
         return $this->belongsTo(Room::class);
