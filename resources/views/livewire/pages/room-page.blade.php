@@ -41,7 +41,7 @@
             @endforelse
         </div>
 
-        <p class="text-md font-semibold">
+        <p class="text-md font-semibold my-4">
             {{ $room->description }}
         </p>
 
